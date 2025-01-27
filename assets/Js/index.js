@@ -45,6 +45,8 @@ class  heroi {
             console.log(`O ${this.tipo} atacou usando ${ataquesHerois[3]}`)
         }else if(this.tipo === "robo"){
             console.log(`O ${this.tipo} atacou usando ${ataquesHerois[4]}`)
+        }else{
+            console.log("ataque nao cadastrado")
         }
 
         
@@ -53,5 +55,7 @@ class  heroi {
 
 
 const meuHeroi = new heroi("homem de ferro",37,"guerreiro");
+const meuHeroi2 = new heroi("punho de ferro",107,"ninja");
 
 console.log(meuHeroi.atacar());
+console.log(meuHeroi2.atacar());
